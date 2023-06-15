@@ -1,2 +1,11 @@
-p:- not q.
-q:- not p.
+win(X) :- move(X,Y), not win(Y).
+
+pos(X) :- move(X,_).
+pos(X) :- move(_,X).
+
+lost(X) :- pos(X), not win(X).
+
+move(a,b).
+move(b,c).
+move(c,d).
+move(d,c).
