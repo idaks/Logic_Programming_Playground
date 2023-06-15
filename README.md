@@ -21,7 +21,7 @@ To execute Clingo, you can employ the command `clingo win_move.lp`. Alternativel
 To begin, you'll need to launch the Prolog interpreter by entering `swipl` into your terminal. Next, you should load the `family.pl` file into the interpreter with the command `consult('family.pl').` Once that's done, you can discover who John's grandchildren are by executing `grandparent(john,X).` After receiving the first answer, you can continue hitting `;` to reveal additional answers until there are none left. You can exit the Prolog interpreter by typing `halt.` and pressing Enter.
 
 ## DLV
-Similar to clingo, you can simply use `dlv win_move.dlv` to run the scripts
+Just like with Clingo, you can easily execute scripts in DLV by using the command `dlv win_move.dlv`. Additionally, by incorporating the `-wf` option, you can utilize the well-founded model within DLV.
 
 ## Logica
 Contrasting with the other three packages, Logica uniquely offers support for both command line operations and an Interactive Programming Interface, such as Jupyter Notebook. Here, we only instroduce the command line version, you can use `logica hello.l run Greeting`
