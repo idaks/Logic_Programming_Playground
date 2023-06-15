@@ -18,7 +18,7 @@ Within the `examples` directory, we've provided four separate files that you can
 To execute Clingo, you can employ the command `clingo win_move.lp`. Alternatively, you can use `clingo win_move.lp 0`, which will provide you with all the potential solution sets or "possible worlds".
 
 ## Prolog
-To begin, you'll need to launch the Prolog interpreter by entering `swipl` into your terminal. Next, you should load the `family.pl` file into the interpreter with the command `consult('family.pl')`. Once that's done, you can discover who John's grandchildren are by executing `grandparent(john,X).`. After receiving the first answer, you can continue hitting `;` to reveal additional answers until there are none left. You can exit the Prolog interpreter by typing `halt.` and pressing Enter.
+To begin, you'll need to launch the Prolog interpreter by entering `swipl` into your terminal. Next, you should load the `family.pl` file into the interpreter with the command `consult('family.pl').` Once that's done, you can discover who John's grandchildren are by executing `grandparent(john,X).` After receiving the first answer, you can continue hitting `;` to reveal additional answers until there are none left. You can exit the Prolog interpreter by typing `halt.` and pressing Enter.
 
 ## DLV
 Similar to clingo, you can simply use `dlv win_move.dlv` to run the scripts
