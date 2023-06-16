@@ -28,6 +28,9 @@ sudo ln -s /workspaces/Logic_Programming_Playground/dlv.x86-64-linux-elf-static.
 # Install SWI-Prolog
 sudo apt-get install swi-prolog --yes
 
+# Install Emacs
+sudo apt-get install emacs --yes
+
 # Install clingo and graphviz using conda
 echo "Installing clingo and graphviz"
 sudo apt install graphviz --yes
