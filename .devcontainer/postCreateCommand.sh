@@ -38,8 +38,13 @@ sudo apt install gringo --yes
 
 # Install pip
 sudo apt-get install python3-pip --yes
+sudo apt-get install sqlite3
 
 # Install logica
 pip3 install logica
+pip3 install jupyterlab
+pip3 install pandas
+pip3 install ipython-sql
+pip3 install graphviz
 
 echo "Setup completed successfully"
