@@ -1,27 +1,28 @@
-# Logic_Programming_Playground
+# IS515 Notebook Running Instructions
 
-For individuals with an interest in Logic Programming, this repository serves as an easy-to-use playground, eliminating the hassle of complex environment setup.
+To get started with the IS515 project, follow these steps:
 
-To utilize this repository, please use the GitHub Codespace feature. 
-While the initial setup may take a few minutes, subsequent uses will bypass the setup process, making it quicker and more convenient.
+### 1. Create a Codespace
 
-At present, this playground incorporates four different logic programming packages.
-- Clingo [[Website](https://potassco.org/clingo/)]
-- Prolog [[Website](https://www.swi-prolog.org/)]
-- DLV [[Website](https://www.dlvsystem.it/dlvsite/dlv/)]
-- Logica [[Website](https://logica.dev/)]
+Click the button below to create a Codespace for the `fall23_is515` branch:
 
-# Example
-Within the `examples` directory, we've provided four separate files that you can utilize to get a taste for the four logic programming packages.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/idaks/Logic_Programming_Playground/tree/fall23_is515)
 
-## Clingo
-To execute Clingo, you can employ the command `clingo win_move.lp`. Alternatively, you can use `clingo win_move.lp 0`, which will provide you with all the potential solution sets or "possible worlds".
+**Note:** After initiating Codespace, wait for the `postCreateCommand` to complete in the terminal. Meanwhile, use the shortcut `Cmd` + `Shift` + `P` on Mac (`Ctrl` + `Shift` + `P` on Windows) and select `View Creation Log` to monitor the setup progress.
 
-## Prolog
-To begin, you'll need to launch the Prolog interpreter by entering `swipl` into your terminal. Next, you should load the `family.pl` file into the interpreter with the command `consult('family.pl').` Once that's done, you can discover who John's grandchildren are by executing `grandparent(john,X).` After receiving the first answer, you can continue hitting `;` to reveal additional answers until there are none left. You can exit the Prolog interpreter by typing `halt.` and pressing Enter.
+### 2. Launch Jupyter Lab
 
-## DLV
-Just like with Clingo, you can easily execute scripts in DLV by using the command `dlv win_move.dlv`. Additionally, by incorporating the `-wf` option, you can utilize the well-founded model within DLV.
+Once the `postCreateCommand` has finished, start Jupyter Lab by entering the following command in the terminal:
 
-## Logica
-Contrasting with the other three packages, Logica uniquely offers support for both command line operations and an Interactive Programming Interface, such as Jupyter Notebook. Here, we only instroduce the command line version, you can use `logica hello.l run Greeting`
+```bash
+@username -> /workspaces/Logic_Programming_Playground (fall23_is515) $ jupyter lab
+```
+If the terminal becomes unresponsive or blank after executing jupyter lab, simply refresh your browser. This should reveal the Jupyter Lab URL.
+
+### 3. Access Jupyter Lab
+Copy and paste the URL into your browser, or Command-click (Mac) / Ctrl-click (Windows) the link directly. If prompted for a password or token, use the token XXX from the URL:
+```
+http://localhost:8888/lab?token=XXXX
+```
+This should grant you access to Jupyter Lab where you can begin your work.
+
